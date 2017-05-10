@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META data / SEO -->
+	<meta charset="utf-8">
+	<meta name="NZ Longboard & SUP Open" description="Sponsored by Barrett Homes">
+		<title>Barrett Homes - Longboard Competition 2017</title>
+	<!-- Links to CSS / Bootstrap / Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="assets/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="assets/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+	<!-- bootstrap nav bar that is customised -->
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#anchor-intro" class="navbar-brand"><img id="logo" src="assets/bh_logo.jpg"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul id="navbar-right" class="nav navbar-nav navbar-right">
+					<li><a href="#anchor-intro">About</a></li>
+					<li><a href="#anchor-reg">2018 Registration</a></li>
+					<li><a href="#anchor-hall-of-fame">Hall Of Fame</a></li>
+					<li><a href="#anchor-sponsors">Co-Sponsors</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- This is the hero banner container including static graphic & title copy -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="content"> 
+							<h1>NZ Longboard & SUP Open</h1>
+							<h3>Proudly Sponsored By Barrett Homes</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container-fluid">		
+			<!-- This is the intro container on the left side there is outline copy and on the right a YouTube video displayed via the YT API -->
+			<div id="intro-row" class="row"><a class="anchor" name="anchor-intro"></a>
+				 <div class="col-lg-6 col-sm-6 intro-left">
+					 <p>High level summary including...</p>
+					 <ul>
+					 	<li>Comp Overview</li>
+					 	<li>Winner Congrats & Link to Hall of Fame</li>
+					 	<li>Details re 2018 Registration & Link</li>
+					 </ul>
+				 </div>
+				 <div class="col-lg-6 col-sm-6">
+				 	<!-- <img class="video" src="assets/img/video-placeholder.jpg"> -->
+				 	<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbiom4UmeBo" frameborder="0" allowfullscreen></iframe>
+				 </div>
+			</div>
+
+			<!-- This is the title row to introduce the 2017 Hall Of Fame -->	
+			<div id="comp-title-row" class="row"><a class="anchor" name="anchor-hall-of-fame"></a>
+				<div class="col-lg-12">
+					<h1>Hall Of Fame</h1>
+					<hr>
+					<p>Check out our previous winners - just select the year below.</p>
+					<div class="filter-select">
+						<button class="hall-btn">All</button>
+						<button class="hall-btn">2017</button>
+						<button class="hall-btn">2016</button>
+					</div>
+				</div>	
+			</div>
+		
+			<!-- This is where the grid begins for the images to be pulled in dynamically from the flickr API-->
+			
+			<div id="photos">
+			</div> 
+				 <!-- <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div>
+				   <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div>
+				   
+				   <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div>
+				   <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div>
+				   <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div>
+				   <div class="col-lg-4 col-sm-6">
+				  	<div class="thumbnail">
+					  <img src="assets/img/comp-placeholder.jpg">
+					 </div>
+				  </div> -->
+			 
+
+			 <!-- This is the registration form container -->
+			<div id="reg-row" class="row"><a class="anchor" name="anchor-reg"></a>
+				<div class="col-lg-12">
+					<h3>Register for the 2018 NZ Longboard & SUP Open</h3>
+					<p>And go in the draw to win a Custom Surfboard!</p>
+					<hr>
+					<p>The 2018 date is TBC but likely to be during March. Get your entry in early and you might just win a new board for your troubles.</p>
+
+					<form class="sign-up" method="post">
+						<div>
+							<label for="Name">Name</label>
+							<br>
+							<input type="text" name="name" placeholder="Full name..." id="name" required/>
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<br>
+							<input type="email" name="email" placeholder="Email..." id="email" required/>
+						</div>
+						<div>
+							<label for="Division">Division</label>
+							<br>
+							<select>
+								  <option value="no division"></option>
+								  <option value="Under 18">Under 18</option>
+								  <option value="Open Mens Longboard">Open Mens Longboard</option>
+								  <option value="Open Womens Longboard">Open Womens Longboard</option>
+								  <option value="Stand Up Paddle Open Division">Stand Up Paddle Open Division</option>
+							</select>
+						</div>
+						<div>
+							<label for="Division">Age</label>
+							<br>
+							<select>
+								  <option value="no age"></option>
+								  <option value="under 18">Under 18</option>
+								  <option value="18 - 29">18 - 29</option>
+								  <option value="30 - 39">30 - 39</option>
+								  <option value="40+">40+</option>
+							</select>
+						</div>
+						<div>
+							<label for="boarddraw">Tell us why you deserve a brand new custom surfboard</label>
+							<br>
+							<textarea></textarea>
+						</div>
+							<input type="checkbox" name="terms" value="enter" required>I understand the registration will not be confirmed until 6-weeks prior to the event start.<br>
+							<button type="submit" method="post" class="submit">Register</button>
+					</form>
+				</div>
+			</div>
+
+			 <div id="sponsor-row" class="row"><a class="anchor" name="anchor-sponsors"></a>
+				<div class="col-lg-12">
+					<p>Sponsor Logo Container</p>
+				</div>	
+			</div>
+		</div>
+	</main>
+</body>
+</html>
