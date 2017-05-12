@@ -45,8 +45,8 @@ header {
 	background-size: cover;
 	background-position: center;
 	color: black;
-	padding-top: 280px;
-	padding-bottom: 300px;
+	padding-top: 350px;
+	padding-bottom: 280px;
 }
 
 header h1 {
@@ -60,7 +60,7 @@ header h3 {
 }
 
 #content {
-	text-align: right;
+	text-align: center;
 	padding top: 72px;
 	margin-left: 72px;
 }
@@ -238,6 +238,8 @@ form span {
 .sponsor-row {
 	background-color: #f2f2f2;
 	padding-top: 40px;
+	padding-left: 170px;
+	padding-right: 170px;
 	color: white;
 	height: 200px;
 	text-align: center;
@@ -246,16 +248,14 @@ form span {
 .sponsor-tks {
 	color: black;
 	padding-right: 50px;
+	margin-top: 42px;
 	font-size: 20px;
 	text-align: left;
 	display: inline-block;
 }
 
-.snz-logo,
-.dhd-logo {
+.snz-logo {
 	display: inline-block;
-	vertical-align: center;
-	padding: 0 50px;
 }
 
 /*CSS specific to sponsor row*/
