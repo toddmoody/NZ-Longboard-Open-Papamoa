@@ -6,38 +6,38 @@
 	<meta name="NZ Longboard & SUP Open" description="Sponsored by Barrett Homes">
 		<title>Barrett Homes - Longboard Competition 2017</title>
 	<!-- Links to CSS / Bootstrap / Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/app.css">
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	<script src="assets/app.js" type="text/javascript"></script>
 </head>
-
 <body>
-	
-	<!-- bootstrap nav bar that is customised -->
-	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	<!-- anchor link for the back to top link fixed to lower right of page -->
+	<a class="anchor" name="top"></a>
+	<!-- bootstrap nav bar that is customised incl. hamburger menu for mobile -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<a href="#anchor-intro" class="navbar-brand"><img id="logo" src="assets/bh_logo.jpg"></a>
-			</div>
-			<div class="collapse navbar-collapse" id="bs-nav-demo">
-				<ul id="navbar-right" class="nav navbar-nav navbar-right">
-					<li><a href="#anchor-intro">About</a></li>
-					<li><a href="#anchor-reg">2018 Registration</a></li>
-					<li><a href="#anchor-hall-of-fame">Hall Of Fame</a></li>
-					<li><a href="#anchor-sponsors">Co-Sponsors</a></li>
-				</ul>
-			</div>
-		</div>
+	      <a href="#" class="navbar-left"><img class="logo" src="assets/bh_logo.jpg"></a>
+	    </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	   			<li><a href="#anchor-intro">About</a></li>
+				<li><a href="#anchor-hall-of-fame">Hall Of Fame</a></li>
+				<li><a href="#anchor-reg">2018 Registration</a></li>
+				<li><a href="#anchor-sponsors">Co-Sponsors</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
 	</nav>
-
 	<!-- This is the hero banner container including static graphic & title copy -->
 	<header>
 		<div class="container">
@@ -45,140 +45,133 @@
 				<div class="col-lg-12">
 					<div id="content"> 
 							<h1>NZ Longboard & SUP Open</h1>
-							<h3>Proudly Sponsored By Barrett Homes</h3>
+							<h3>~ Proudly Sponsored By Barrett Homes ~</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	
 	<main>
 		<div class="container-fluid">		
-			<!-- This is the intro container on the left side there is outline copy and on the right a YouTube video displayed via the YT API -->
-			<div id="intro-row" class="row"><a class="anchor" name="anchor-intro"></a>
-				 <div class="col-lg-6 col-sm-6 intro-left">
-					 <p>High level summary including...</p>
-					 <ul>
-					 	<li>Comp Overview</li>
-					 	<li>Winner Congrats & Link to Hall of Fame</li>
-					 	<li>Details re 2018 Registration & Link</li>
-					 </ul>
-				 </div>
-				 <div class="col-lg-6 col-sm-6">
-				 	<!-- <img class="video" src="assets/img/video-placeholder.jpg"> -->
-				 	<iframe width="560" height="315" src="https://www.youtube.com/embed/Rbiom4UmeBo" frameborder="0" allowfullscreen></iframe>
+			<!-- This is the intro container on the left side there is intro copy and on the right a YouTube video -->
+			<div class="intro-row row"><a class="anchor" name="anchor-intro"></a>
+				<!--  <div class="intro-left col-lg-6 col-sm-6"> -->
+				 <div class="intro-left col-sm-12 col-lg-6">
+					<p>NZ’s best longboards and Stand Up Paddlers put on an amazing spectacle of surfing during the 2017 event.</p>
+
+					<p>Congratulations to all winners, participants and many thanks to those in the community who got involved.  Check out some of the pics from the <a href="#anchor-hall-of-fame">2016 and 2017 events</a> below (images provided by Col @ <a href="http://www.surf2surf.com" target="_blank">Surf2Surf.com</a>).</p>
+
+					<p>Barrett Homes is looking forward to sponsoring this event again next year alongside Surfing New Zealand Inc!</p> 
+
+					<p><a href="#anchor-reg">Register early</a> for 2018 and win a custom surfboard!</p>						 
+				</div>
+				<div class="intro-right col-sm-12 col-lg-6">
+				 	<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Rbiom4UmeBo" frameborder="0" allowfullscreen></iframe>
 				 </div>
 			</div>
-
-			<!-- This is the title row to introduce the 2017 Hall Of Fame -->	
-			<div id="comp-title-row" class="row"><a class="anchor" name="anchor-hall-of-fame"></a>
+			<!-- This is the title row to introduce the Hall Of Fame -->	
+			<div class="image-row row"><a class="anchor" name="anchor-hall-of-fame"></a>
 				<div class="col-lg-12">
+					<h3>The Champions Gallery</h3>
+					<hr class="image-row-hr"> 
 					<h1>Hall Of Fame</h1>
-					<hr>
-					<p>Check out our previous winners - just select the year below.</p>
-					<div class="filter-select">
+					<div class="filter-select container-fluid">
 						<button class="hall-btn">All</button>
 						<button class="hall-btn">2017</button>
 						<button class="hall-btn">2016</button>
 					</div>
 				</div>	
 			</div>
-		
 			<!-- This is where the grid begins for the images to be pulled in dynamically from the flickr API-->
-			
+			<!-- The HTML is rendered directly from the JavaScript for the div below -->
 			<div id="photos">
 			</div> 
-				 <!-- <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div>
-				   <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div>
-				   
-				   <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div>
-				   <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div>
-				   <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div>
-				   <div class="col-lg-4 col-sm-6">
-				  	<div class="thumbnail">
-					  <img src="assets/img/comp-placeholder.jpg">
-					 </div>
-				  </div> -->
-			 
-
 			 <!-- This is the registration form container -->
-			<div id="reg-row" class="row"><a class="anchor" name="anchor-reg"></a>
-				<div class="col-lg-12">
-					<h3>Register for the 2018 NZ Longboard & SUP Open</h3>
-					<p>And go in the draw to win a Custom Surfboard!</p>
-					<hr>
-					<p>The 2018 date is TBC but likely to be during March. Get your entry in early and you might just win a new board for your troubles.</p>
-
+			<div class="reg-row row"><a class="anchor" name="anchor-reg"></a>
+				<div class="col-sm-12 col-lg-6">
+					<h3>Win A Custom Made Surfboard!</h3>
+					<hr class="image-row-hr"> 
+					<h1>Register for 2018</h1>
 					<form class="sign-up" method="post">
-						<div>
-							<label for="Name">Name</label>
-							<br>
-							<input type="text" name="name" placeholder="Full name..." id="name" required/>
+						<div class="row">
+							<div class="col-sm-12 col-lg-6">
+								<label for="Name">Name*</label>
+								<br>
+								<input type="text" name="name" id="name" required/>
+							</div>
+							<div class="col-sm-12 col-lg-6">
+								<label for="email">Email*</label>
+								<br>
+								<input type="email" name="email" id="email" required/>
+							</div>
 						</div>
-						<div>
-							<label for="email">Email</label>
-							<br>
-							<input type="email" name="email" placeholder="Email..." id="email" required/>
+						<div class="row">
+							<div class="col-sm-12 col-lg-6">
+								<label for="Division">Division*</label>
+								<br>
+								<select required>
+									  <option selected disabled>---</option>
+									  <option value="Under 18">Under 18</option>
+									  <option value="Open Mens Longboard">Open Mens Longboard</option>
+									  <option value="Open Womens Longboard">Open Womens Longboard</option>
+									  <option value="Stand Up Paddle Open Division">Stand Up Paddle Open Division</option>
+								</select>
+								</div>
+								<div class="col-sm-12 col-lg-6">
+								<label for="Division">Age*</label>
+								<br>
+								<select required>
+									  <option selected disabled>---</option>
+									  <option value="under 18">Under 18</option>
+									  <option value="18 - 29">18 - 29</option>
+									  <option value="30 - 39">30 - 39</option>
+									  <option value="40+">40+</option>
+								</select>
+							</div>
 						</div>
-						<div>
-							<label for="Division">Division</label>
-							<br>
-							<select>
-								  <option value="no division"></option>
-								  <option value="Under 18">Under 18</option>
-								  <option value="Open Mens Longboard">Open Mens Longboard</option>
-								  <option value="Open Womens Longboard">Open Womens Longboard</option>
-								  <option value="Stand Up Paddle Open Division">Stand Up Paddle Open Division</option>
-							</select>
+						<div class="row">
+							<div class="col-sm-12 col-lg-12">
+								<label for="boarddraw">Tell us your best surfing story and we'll award the winner with a brand new custom board from DHD.  Conditions apply*</label>
+								<br>
+								<textarea></textarea>
+							</div>
 						</div>
-						<div>
-							<label for="Division">Age</label>
-							<br>
-							<select>
-								  <option value="no age"></option>
-								  <option value="under 18">Under 18</option>
-								  <option value="18 - 29">18 - 29</option>
-								  <option value="30 - 39">30 - 39</option>
-								  <option value="40+">40+</option>
-							</select>
-						</div>
-						<div>
-							<label for="boarddraw">Tell us why you deserve a brand new custom surfboard</label>
-							<br>
-							<textarea></textarea>
-						</div>
-							<input type="checkbox" name="terms" value="enter" required>I understand the registration will not be confirmed until 6-weeks prior to the event start.<br>
-							<button type="submit" method="post" class="submit">Register</button>
+						<div class="row">
+							<div class="col-sm-12 col-lg-12">
+								<button type="submit" method="post" class="submit">Register</button>
+							</div>
+							<div>
+								<span>*Competition is not approved by Barrett Homes and is not currently active.  Created for display purposes only.</span>
+							</div>
+						</div>	
 					</form>
 				</div>
+				<div class="reg-row-right col-sm-12 col-lg-6">
+					<img class="board-img img-fluid" src="assets/img/board-v3.png">
+				</div>
 			</div>
-
-			 <div id="sponsor-row" class="row"><a class="anchor" name="anchor-sponsors"></a>
+			<!-- This is the sponsor container inlcuding thank you reference and sponsor links and logos -->
+			<div class="sponsor-row row"><a class="anchor" name="anchor-sponsors"></a>
+					<div class="col-sm-12 col-lg-12">
+						<h3 class="sponsor-tks">Many thanks to our Co-Sponsors:</h3>
+						<a href="https://www.surfingnz.co.nz/" target="blank"><img class="dhd-logo" src="assets/img/snz.png"></a>
+						<a href="http://www.boardcave.com/surf-brand/dhd-surfboards/" target="blank"><img class="dhd-logo" src="assets/img/dhdv2.png"></a>
+					</div>	
+			</div>
+			<!-- This this the footer row incl. the closing message -->
+			<div class="footer-row row">
 				<div class="col-lg-12">
-					<p>Sponsor Logo Container</p>
+				<h3 class="footer-note">Until next year, thanks from the team and see you in the water.</h3>
 				</div>	
 			</div>
 		</div>
 	</main>
+	<!-- This is the fixed container for the back to top link which is positioned right -->
+	<a class="back-to-top" href="#top"><i class="arrow fa fa-arrow-up"></i></a>
+
+	<!-- Script tags incl. jQuery, Bootstrap & the JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="assets/app.js" type="text/javascript"></script>
 </body>
 </html>

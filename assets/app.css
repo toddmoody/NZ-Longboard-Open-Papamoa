@@ -1,59 +1,14 @@
 body {
-	padding-top: 100px;
-}
-
-header {
-	background: url(https://source.unsplash.com/fqtOAqbbnJg); 
-	background-size: cover;
-	background-position: center;
 	font-family: 'Lato', sans-serif;
-	color: black;
-	padding-top: 300px;
-	padding-bottom: 350px;
 }
 
-#logo {
-	height: 175px;
+/*Global <a> tag & anchor link styles incl. offset for the height of the header*/
+a {
+	color: #ec894d;
 }
 
-#navbar {
-	background-color: #231f20;
-	height: 100px;
-}
-
-#navbar-right {
-	margin-top: 25px;
-}
-
-#content {
-	text-align: right;
-	padding top: 72px;
-	margin-left: 72px;
-}
-
-#intro-row {
-	padding-top: 150px;
-	margin-left: 72px;
-	margin-bottom: 150px;
-	font-size: 25px;
-}
-
-#reg-row {
-	background-color: #f9f9f9;
-	padding-top: 150px;
-	padding-bottom: 150px;
-	margin-bottom: 72px;
-	text-align: left;
-}
-
-#sponsor-row {
-	background-color: #7e7575;
-	color: white;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	margin-top: 72px;
-	font-size: 25px;
-	text-align: center;
+a:hover {
+	color: #ec894d;
 }
 
 a.anchor {
@@ -63,19 +18,112 @@ a.anchor {
     visibility: hidden;
 }
 
-.jumbo-refer {
-	margin-top: 42px;
+/*CSS specific to the navbar*/
+.logo {
+	height: 190px;
+	padding: 5px 15px;
+	position: absolute;
 }
 
-.video {
-	max-width: 700px;
+.navbar-inverse {
+	background-color: #231f20;
 }
 
-.refer-a-friend {
-	background: black;
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #ec894d;
+	margin-bottom: 0;
 }
 
-/*Hall of fame button styles*/
+#bs-example-navbar-collapse-1 {
+	padding-top: 40px;
+	text-align: center;
+}
+
+/*CSS specific to header container*/
+header {
+	background: url(https://source.unsplash.com/fqtOAqbbnJg); 
+	background-size: cover;
+	background-position: center;
+	color: black;
+	padding-top: 280px;
+	padding-bottom: 300px;
+}
+
+header h1 {
+	font-size: 40px;
+	font-weight: 700;	
+}
+
+header h3 {
+	font-family: 'Caveat', cursive;
+	font-size: 28px;
+}
+
+#content {
+	text-align: right;
+	padding top: 72px;
+	margin-left: 72px;
+}
+
+/*CSS specific to intro row*/
+.intro-row {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	padding-left: 102px;
+	padding-right: 32px;
+	background-color: #f9f9f9;
+	font-size: 20px;
+}
+
+.intro-left {
+	padding-bottom: 32px;
+}
+
+.intro-right {
+	text-align: center;
+}
+
+/*CSS specific to the Hall of Fame container / gallery*/
+
+.image-row {
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 150px;
+}
+
+.image-row h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.image-row h3 {
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+}
+
+.image-row button {
+	width: 170px;
+	border: 1px solid #ec894d;
+	outline: none;
+	padding: 15px;
+	margin: 0 3px 0 3px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+.filter-select button:hover {
+	background-color: #ec894d;
+	color: white;
+	transition: 0.4s;
+}
+
+.image-row-hr {
+	width: 180px;
+    height: 5px;
+    margin-bottom: 10px;
+}
 
 .filter-select button.selected {
 	background-color: orange;
@@ -85,6 +133,179 @@ a.anchor {
 .flickr-img {
 	width: 100%;
 }
+
+/*CSS specific to registration container*/
+.reg-row {
+	background-color: #f9f9f9;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.sign-up {
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.sign-up input {
+	border-radius: 3px;
+	font-size: 18px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid #ec894d;
+	background-color: #f2f2f2;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.sign-up select {
+	border-radius: 3px;
+	font-size: 18px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid #ec894d;
+	background-color: #f2f2f2;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.sign-up textarea {
+	border-radius: 3px;
+	font-size: 18px;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ec894d;
+	background-color: #f2f2f2;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.sign-up label {
+	margin-top: 15px;
+	margin-bottom: 8px;
+}
+
+.sign-up button {
+	width: 150px;
+	border: 1px solid #ec894d;
+	outline: none;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+.sign-up button:hover {
+	background-color: #ec894d;
+	color: white;
+	transition: 0.4s;
+}
+
+.reg-row h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+
+.reg-row h3 {
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+}
+
+.board-img {
+	max-width: 650px;
+	vertical-align: center;
+	float: right;
+}
+
+.reg-row-right {
+	padding-right: 0;
+}
+
+form span {
+	font-family: 'Caveat', cursive;
+	font-size: 18px;
+	padding-left: 18px;
+}
+
+/*CSS specific to sponsor row*/
+.sponsor-row {
+	background-color: #f2f2f2;
+	padding-top: 40px;
+	color: white;
+	height: 200px;
+	text-align: center;
+}
+
+.sponsor-tks {
+	color: black;
+	padding-right: 50px;
+	font-size: 20px;
+	text-align: left;
+	display: inline-block;
+}
+
+.snz-logo,
+.dhd-logo {
+	display: inline-block;
+	vertical-align: center;
+	padding: 0 50px;
+}
+
+/*CSS specific to sponsor row*/
+.footer-row {
+	background-color: #231f20;
+	color: white;
+	height: 150px;
+}
+
+.footer-note {
+	color: #ec894d;
+	font-family: 'Caveat', cursive;
+	padding-top: 34px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*back to top link*/
+.back-to-top {
+	margin: 0;
+	position: fixed;
+	bottom: 52px;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #3f3f3f;
+	padding-left: 12px;
+	padding-top: 8px;
+}
+ 
+.back-to-top:hover {
+	margin: 0;
+	position: fixed;
+	bottom: 52px;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 100;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #ec894d;
+	padding-left: 12px;
+	padding-top: 8px;
+}
+
+
+
 
 
 
