@@ -16,7 +16,18 @@ The primary purpose of the website is to promote the event and congratulate part
 
 --- Screenshots ---
 
-Please see attached screenshots displaying key sections of the app.
+- App Header including sponsor logo & responsive navigation
+![Header](https://github.com/toddmoody/NZ-Longboard-Open-Papamoa/blob/928a3e7cf3d9d5c8bca14554a5ccef23cf774aa5/assets/screenshots/header.png)
+
+- Intro to the app incl. high level content to provide overview to the user and promote the competition.  Links included to aid navigation around page to key sections.  Video on right is embedded using a YouTube iFrame.
+![Intro](https://github.com/toddmoody/NZ-Longboard-Open-Papamoa/blob/928a3e7cf3d9d5c8bca14554a5ccef23cf774aa5/assets/screenshots/intro-section.png)
+
+- Hall Of Fame.  Key section of app that allows users to view images of competitors.  They can also filter (see key functionality above).
+![Hall Of Fame](https://github.com/toddmoody/NZ-Longboard-Open-Papamoa/blob/928a3e7cf3d9d5c8bca14554a5ccef23cf774aa5/assets/screenshots/hall-of-fame.png)
+
+- 2018 Registration / Competition.  Allows users to register for the 2018 Event and by doing so they enter into a competition to win a surfboard.  Competition element is designed to incentivise registrations.
+![2018 registraton](https://github.com/toddmoody/NZ-Longboard-Open-Papamoa/blob/928a3e7cf3d9d5c8bca14554a5ccef23cf774aa5/assets/screenshots/registration-competition.png)
+
 
 --- Technology ---
 
