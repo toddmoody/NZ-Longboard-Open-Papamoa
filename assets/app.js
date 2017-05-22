@@ -14,7 +14,6 @@ $(document).ready(function() {
       tags: filter,
       format: "json"
     };
-
     // HTML 'render function' using custom elements of the flickr JSON data
     function displayPhotos(data) {
       // create a local 'photoHTML' variable which is gradually built up into the required HTML structure incl. bootstrap responsive classes.
@@ -22,7 +21,7 @@ $(document).ready(function() {
       $.each(data.items, function (i, photo) {
         photoHTML += '<div class="col-lg-3 col-sm-6">';
         photoHTML += '<div class="thumbnail">';
-        photoHTML += '<img class="flickr-img" src="' + photo.media.m + '">';
+        photoHTML += '<a href="' + photo.link + '" target="blank"><img class="flickr-img" src="' + photo.media.m + '"></a>';
         photoHTML += '</div>';
         photoHTML += '</div>';
       });

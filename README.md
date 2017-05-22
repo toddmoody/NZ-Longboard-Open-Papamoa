@@ -42,6 +42,10 @@ Additionally, Google Fonts have been utilised and Font Awesome for icons.
 
 --- Release Notes --- 
 
+-- 23.05.2017 --
+- Updated thumbnails to link to full size photo in Flickr on click
+- Updated CSS for anchor links in order to improve positioning when nav clicked
+
 -- 15.05.2017 --
 - Updated README.md file 
 - Improved code comments across HTML/CSS/JavaScript
